@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xem Trước Bài Học: Biểu Đồ Đường</title>
+    <!-- Tải Tailwind CSS để tạo giao diện responsive và đẹp mắt -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fc;
+        }
+        .card {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        /* Đã loại bỏ các lớp CSS của accordion */
+    </style>
+</head>
+<body class="p-4 sm:p-8">
+
+    <div class="max-w-4xl mx-auto">
+        <!-- Header -->
+        <header class="text-center py-6 mb-8 bg-white rounded-xl card border-b-4 border-indigo-500">
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-indigo-700">CHUẨN BỊ BÀI HỌC</h1>
+            <h2 class="text-xl sm:text-2xl font-semibold text-gray-600 mt-1">Bài: [IT5-Lesson3.1] Phân tích dòng chảy dữ liệu</h2>
+            <p class="text-sm text-gray-400 mt-2">Môn: Tin học | Lớp 5 | Tuần 14</p>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="space-y-6">
+
+            <!-- Section 1: Mục tiêu học tập (Không đổi) -->
+            <div class="card bg-emerald-50 p-6 rounded-xl border-l-4 border-emerald-500">
+                <h3 class="text-2xl font-bold text-emerald-700 mb-4 flex items-center">
+                    <!-- Icon chung cho mục tiêu -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    Mục tiêu Bài học (Cả 2 Tiết)
+                </h3>
+                <!-- Thay thế list-disc list-inside bằng list custom với icon -->
+                <ul class="list-none text-gray-700 space-y-3 pl-2">
+                    <li class="flex items-start">
+                        <!-- Icon: Line Chart/Data -->
+                        <svg class="h-5 w-5 text-emerald-600 mr-2 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"/></svg>
+                        <p><strong class="font-extrabold text-emerald-800">Tạo và diễn giải</strong> được một biểu đồ đường để thể hiện sự thay đổi của một giá trị theo thời gian.</p>
+                    </li>
+                    <li class="flex items-start">
+                        <!-- Icon: Trending Up -->
+                        <svg class="h-5 w-5 text-emerald-600 mr-2 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+                        <p><strong class="font-extrabold text-emerald-800">Rút ra kết luận</strong> từ biểu đồ (phân tích xu hướng, điểm cao nhất/thấp nhất).</p>
+                    </li>
+                    <li class="flex items-start">
+                        <!-- Icon: Document Check -->
+                        <svg class="h-5 w-5 text-emerald-600 mr-2 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M17 16h.01"/></svg>
+                        <p><strong class="font-extrabold text-emerald-800">Biết đánh giá</strong> và chỉnh sửa biểu đồ để nâng cao độ chính xác.</p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Section 2: Nội dung xem trước - Tiết 5 -->
+            <div class="space-y-4">
+                <h3 class="text-2xl font-bold text-gray-700 mb-4 border-b pb-2">Nội dung Chính - Tiết 5</h3>
+
+                <!-- MỤC 1: Biểu đồ đường là gì? (Đã bỏ Accordion) -->
+                <div class="card rounded-xl border border-indigo-200 overflow-hidden">
+                    <div class="bg-indigo-100 p-4 flex items-center">
+                        <span class="text-lg font-bold text-indigo-900 flex items-center">
+                            <!-- Icon: Bar Chart -->
+                             <svg class="h-6 w-6 text-indigo-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+                            1. Đặc điểm của Biểu đồ Đường (Line Chart)
+                        </span>
+                    </div>
+                    <div class="p-4 text-gray-700 bg-white border-t border-indigo-200">
+                        <p class="mb-3">Biểu đồ đường dùng để biểu diễn <strong class="text-indigo-700">sự thay đổi</strong> của một hoặc nhiều giá trị <strong class="text-indigo-700">theo thời gian</strong> (ngày, tuần, tháng, năm).</p>
+                        <ul class="list-none pl-0 space-y-2 mb-4">
+                            <li class="flex items-start">
+                                <!-- Icon: Arrow up/down -->
+                                <svg class="h-5 w-5 text-blue-500 mr-2 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M7 10h10M7 14h10M7 18h10"/></svg>
+                                Các điểm dữ liệu được nối với nhau bằng đường thẳng, giúp dễ dàng nhìn thấy <strong class="text-blue-700">xu hướng</strong> tăng, giảm.
+                            </li>
+                            <li class="flex items-start">
+                                <!-- Icon: Clock -->
+                                <svg class="h-5 w-5 text-blue-500 mr-2 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                Thường được dùng để thể hiện: số học sinh đi học đúng giờ trong tuần, lượng mưa theo tháng, số lượng sách mượn theo ngày, v.v.
+                            </li>
+                        </ul>
+
+                        <!-- THAY THẾ HÌNH MINH HỌA BIỂU ĐỒ ĐƯỜNG BẰNG URL MỚI -->
+                        <div class="mt-4 p-4 bg-white border border-gray-200 rounded-lg text-center">
+                            <p class="text-sm font-semibold text-gray-600 mb-2">Ví dụ minh họa: Biểu đồ Đường với các điểm Max/Min được đánh dấu</p>
+                            <!-- Sử dụng URL hình ảnh mới -->
+                            <img src="https://blog.hocexcel.online/wp-content/uploads/2019/03/ket-qua-highlight-max-min-bieu-do-line.png" 
+                                alt="Biểu đồ đường với các điểm cao nhất và thấp nhất được làm nổi bật" 
+                                class="mx-auto w-full max-w-sm rounded-lg border-2 border-indigo-300 shadow-md">
+                                
+                        </div>
+                        <!-- KẾT THÚC KHỐI HÌNH ẢNH -->
+
+                    </div>
+                </div>
+
+                <!-- MỤC 2: Nguyên tắc tạo bảng dữ liệu (Đã bỏ Accordion) -->
+                <div class="card rounded-xl border border-purple-200 overflow-hidden">
+                    <div class="bg-purple-100 p-4 flex items-center">
+                        <span class="text-lg font-bold text-purple-900 flex items-center">
+                            <!-- Icon: Table/Data Sheet -->
+                            <svg class="h-6 w-6 text-purple-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                            2. Nguyên tắc tạo Bảng Dữ liệu trước khi vẽ Biểu đồ
+                        </span>
+                    </div>
+                    <div class="p-4 text-gray-700 bg-white border-t border-purple-200">
+                        <p class="mb-3 font-semibold text-red-600 flex items-center">
+                            <!-- Icon: Warning/Alert -->
+                            <svg class="h-5 w-5 text-red-500 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                            Để biểu đồ hiển thị đúng, bảng dữ liệu phải tuân theo 3 nguyên tắc sau:
+                        </p>
+                        <!-- Thay thế list-decimal list-inside bằng list custom -->
+                        <ol class="list-none pl-0 space-y-2">
+                            <li class="flex items-start">
+                                <span class="text-lg font-bold text-purple-600 mr-2 flex-shrink-0">1.</span>
+                                Dữ liệu <strong class="text-purple-700">phải có yếu tố thời gian</strong> (Ngày/Tuần/Tháng) ở cột đầu tiên.
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-lg font-bold text-purple-600 mr-2 flex-shrink-0">2.</span>
+                                <strong class="text-purple-700">Mỗi hàng</strong> là một mốc thời gian cụ thể (Ví dụ: Thứ Hai, Thứ Ba,...).
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-lg font-bold text-purple-600 mr-2 flex-shrink-0">3.</span>
+                                Các cột giá trị phải <strong class="text-purple-700">thống nhất về kiểu dữ liệu</strong> (Ví dụ: chỉ là Số học sinh, không lẫn lộn giữa số và chữ).
+                            </li>
+                        </ol>
+                        <p class="mt-3 text-sm text-gray-500">*(Chúng ta sẽ thực hành các thao tác trong Excel: Nhập liệu, Insert Line Chart, Thêm tiêu đề và nhãn trục X, Y.)*</p>
+                    </div>
+                </div>
+                
+                <!-- MỤC Bổ sung: Video Hướng dẫn Thực hành (Không đổi) -->
+                <div class="card rounded-xl bg-blue-50 border-l-4 border-blue-500 p-4">
+                    <h4 class="text-xl font-bold text-blue-700 mb-3 flex items-center">
+                        <!-- Icon: Video Camera -->
+                        <svg class="h-6 w-6 text-blue-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+                        Tài liệu Tham khảo & Hướng dẫn Thực hành (Video)
+                    </h4>
+                    <p class="text-gray-700 mb-2">Video sau sẽ hướng dẫn chi tiết cách thực hiện các bước tạo Biểu đồ Đường trong phần mềm Excel:</p>
+                    <a href="https://www.youtube.com/watch?v=auPXGR7r6L8" target="_blank" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold transition duration-150 p-2 bg-blue-100 rounded-lg">
+                        <svg class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.875v4.25a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/></svg>
+                        CÁCH VẼ BIỂU ĐỒ ĐƯỜNG TRONG EXCEL
+                    </a>
+                </div>
+                <!-- KẾT THÚC MỤC Bổ sung -->
+            </div>
+
+            <!-- Section 3: Câu hỏi Khám phá và Suy ngẫm (Không đổi) -->
+            <div class="card bg-yellow-50 p-6 rounded-xl border-l-4 border-yellow-500">
+                <h3 class="text-2xl font-bold text-yellow-800 mb-4 flex items-center">
+                    <!-- Icon: Book/Thinking -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.523 5.754 18 7.5 18s3.332.477 4.5 1.247m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.523 18.246 18 16.5 18s-3.332.477-4.5 1.247" />
+                    </svg>
+                    Tự Khám Phá & Suy Ngẫm (Chuẩn bị cho Tiết 5 & 6)
+                </h3>
+                <p class="text-gray-700 mb-4 italic">Hãy suy nghĩ về các câu hỏi sau trước khi đến lớp. Chúng ta sẽ cùng nhau tìm câu trả lời!</p>
+
+                <div class="space-y-3">
+                    <!-- Question 1 -->
+                    <div class="bg-yellow-100 p-3 rounded-lg border-l-4 border-yellow-600 flex items-start">
+                        <span class="text-xl font-extrabold text-yellow-700 mr-2 flex-shrink-0">1.</span>
+                        <div>
+                            <p class="font-semibold text-yellow-900">Khi nhìn vào một biểu đồ đường, trục ngang (Trục X) và trục dọc (Trục Y) thường thể hiện điều gì?</p>
+                            <p class="text-sm mt-1 text-gray-600">
+                                <!-- Icon: Lightbulb -->
+                                <svg class="h-4 w-4 inline text-yellow-600 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6 1.155l-1.396 1.43M5.155 6.173L6.551 7.604M20.845 17.827l-1.396-1.43M3.155 17.827L4.551 16.396M18 12h-1M6 12H5m13.89-6.326l-1.42 1.42M5.11 17.89l1.42-1.42"/></svg>
+                                (Gợi ý: Trục X luôn liên quan đến <strong class="text-yellow-800">thời gian</strong>!)
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Question 2 -->
+                    <div class="bg-yellow-100 p-3 rounded-lg border-l-4 border-yellow-600 flex items-start">
+                        <span class="text-xl font-extrabold text-yellow-700 mr-2 flex-shrink-0">2.</span>
+                        <p class="font-semibold text-yellow-900">Sau khi vẽ biểu đồ, làm thế nào để em biết được <strong class="text-yellow-800">"xu hướng"</strong> của dữ liệu (là tăng, giảm, hay không thay đổi nhiều)?</p>
+                    </div>
+                    <!-- Question 3 -->
+                    <div class="bg-yellow-100 p-3 rounded-lg border-l-4 border-yellow-600 flex items-start">
+                        <span class="text-xl font-extrabold text-yellow-700 mr-2 flex-shrink-0">3.</span>
+                        <div>
+                            <p class="font-semibold text-yellow-900">Tại sao việc vẽ biểu đồ lại giúp các hệ thống AI dễ dàng <strong class="text-yellow-800">đưa ra dự đoán</strong> về tương lai hơn?</p>
+                            <p class="text-sm mt-1 text-gray-600">
+                                <!-- Icon: Brain/AI -->
+                                <svg class="h-4 w-4 inline text-yellow-600 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8V9m0-2V6m0-2V3"/></svg>
+                                (Gợi ý: Nó giúp nhìn thấy <strong class="text-yellow-800">quy luật</strong>!)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="text-center mt-10 py-4 text-sm text-gray-500">
+            &copy; Vinschool Grand Park - Tài liệu chuẩn bị bài học Tin học
+        </footer>
+
+    </div>
+</body>
+</html>
